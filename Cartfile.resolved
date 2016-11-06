@@ -1,0 +1,3 @@
+github "Alamofire/Alamofire" "4.0.1"
+github "realm/realm-cocoa" "v1.1.0"
+github "carambalabs/SugarRecord" "3.0.0"
