@@ -21,9 +21,11 @@ extension ViewModelable {
     mutating func subscribe(subscriber: Subscriber) {
         subscribers.append(subscriber)
     }
+    
     mutating func unsubscribe(subscriber: Subscriber) {
         subscribers = subscribers.filter({ $0.identifier != subscriber.identifier })
     }
+    
     func notifySubscribers() {
         subscribers.forEach({ $0.update() })
     }

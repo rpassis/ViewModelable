@@ -12,9 +12,11 @@
 		5B2429381DCDE0D600E0BEBE /* ViewModelable.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B24292A1DCDE0D600E0BEBE /* ViewModelable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B2429421DCDE0F100E0BEBE /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2429411DCDE0F100E0BEBE /* ViewModelable.swift */; };
 		5B2429441DCDE13200E0BEBE /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2429431DCDE13200E0BEBE /* Subscriber.swift */; };
-		5B29CD7F1DCEE6C0000E46A2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B29CD7E1DCEE6C0000E46A2 /* Alamofire.framework */; };
-		5B29CD811DCEE6CA000E46A2 /* SugarRecordCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B29CD801DCEE6CA000E46A2 /* SugarRecordCoreData.framework */; };
 		5B5AF12C1DCDE339008D2894 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5AF12B1DCDE339008D2894 /* Storage.swift */; };
+		5BF7A6121DCF2E3500875C4D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF7A6111DCF2E3500875C4D /* Alamofire.framework */; };
+		5BF7A6181DCF2F2000875C4D /* SugarRecordCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF7A6171DCF2F2000875C4D /* SugarRecordCoreData.framework */; };
+		5BF7A61A1DCF2F5900875C4D /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7A6191DCF2F5900875C4D /* Networker.swift */; };
+		5BF7A61F1DD0807500875C4D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7A61E1DD0807500875C4D /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +39,17 @@
 		5B2429411DCDE0F100E0BEBE /* ViewModelable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
 		5B2429431DCDE13200E0BEBE /* Subscriber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
 		5B29CD7C1DCED7E7000E46A2 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
-		5B29CD7E1DCEE6C0000E46A2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		5B29CD801DCEE6CA000E46A2 /* SugarRecordCoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SugarRecordCoreData.framework; path = Carthage/Build/iOS/SugarRecordCoreData.framework; sourceTree = "<group>"; };
 		5B5AF12B1DCDE339008D2894 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		5BF7A5F81DCEF31000875C4D /* ViewModelable-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewModelable-iOS.h"; sourceTree = "<group>"; };
 		5BF7A5F91DCEF31000875C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF7A6031DCEF31000875C4D /* ViewModelable_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable_iOSTests.swift; sourceTree = "<group>"; };
 		5BF7A6051DCEF31000875C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BF7A6111DCF2E3500875C4D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		5BF7A6131DCF2F1500875C4D /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		5BF7A6151DCF2F1800875C4D /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		5BF7A6171DCF2F2000875C4D /* SugarRecordCoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SugarRecordCoreData.framework; path = Carthage/Build/iOS/SugarRecordCoreData.framework; sourceTree = "<group>"; };
+		5BF7A6191DCF2F5900875C4D /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		5BF7A61E1DD0807500875C4D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B29CD7F1DCEE6C0000E46A2 /* Alamofire.framework in Frameworks */,
-				5B29CD811DCEE6CA000E46A2 /* SugarRecordCoreData.framework in Frameworks */,
+				5BF7A6121DCF2E3500875C4D /* Alamofire.framework in Frameworks */,
+				5BF7A6181DCF2F2000875C4D /* SugarRecordCoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,8 @@
 				5B24292B1DCDE0D600E0BEBE /* Info.plist */,
 				5B2429411DCDE0F100E0BEBE /* ViewModelable.swift */,
 				5B5AF12B1DCDE339008D2894 /* Storage.swift */,
+				5BF7A6191DCF2F5900875C4D /* Networker.swift */,
+				5BF7A61E1DD0807500875C4D /* Router.swift */,
 				5B2429431DCDE13200E0BEBE /* Subscriber.swift */,
 			);
 			path = ViewModelable;
@@ -113,8 +121,10 @@
 		5B29CD7D1DCEE6BF000E46A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5B29CD801DCEE6CA000E46A2 /* SugarRecordCoreData.framework */,
-				5B29CD7E1DCEE6C0000E46A2 /* Alamofire.framework */,
+				5BF7A6171DCF2F2000875C4D /* SugarRecordCoreData.framework */,
+				5BF7A6151DCF2F1800875C4D /* RealmSwift.framework */,
+				5BF7A6131DCF2F1500875C4D /* Realm.framework */,
+				5BF7A6111DCF2E3500875C4D /* Alamofire.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -250,7 +260,9 @@
 			files = (
 				5B5AF12C1DCDE339008D2894 /* Storage.swift in Sources */,
 				5B2429421DCDE0F100E0BEBE /* ViewModelable.swift in Sources */,
+				5BF7A61F1DD0807500875C4D /* Router.swift in Sources */,
 				5B2429441DCDE13200E0BEBE /* Subscriber.swift in Sources */,
+				5BF7A61A1DCF2F5900875C4D /* Networker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
