@@ -12,8 +12,8 @@ public protocol ViewModelable {
     init(store: Storage?)
     var store: Storage? { get }
     var subscribers: [Subscriber] { get set }
-    func subscribe(subscriber: Subscriber)
-    func unsubscribe(subscriber: Subscriber)
+    mutating func subscribe(subscriber: Subscriber)
+    mutating func unsubscribe(subscriber: Subscriber)
     func notifySubscribers()
 }
 
