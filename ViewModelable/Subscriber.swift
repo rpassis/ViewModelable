@@ -10,5 +10,5 @@ import Foundation
 
 public protocol Subscriber {
     var identifier: String { get }
-    func update()
+    func update(viewModel: ViewModelable)
 }

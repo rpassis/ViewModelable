@@ -9,4 +9,7 @@
 import Foundation
 import SugarRecordCoreData
 
-protocol Storage: SugarRecordCoreData.Storage {}
+public protocol Storage: SugarRecordCoreData.Storage {
+    var networker: Networker? { get }
+    init(networker: Networker?)
+}

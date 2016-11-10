@@ -9,14 +9,15 @@
 import Foundation
 import Alamofire
 
-protocol Networker {
-    func request(_ request: URLRequestConvertible, callback: (Result<Any>) -> ())
+public protocol Networker {
+    func request(_ request: URLRequestConvertible, callback: @escaping (Result<Any>) -> ())
 }
 
-extension Networker {
-    func request(_ request: URLRequestConvertible, callback: @escaping (Result<Any>) -> ()) {
+public extension Networker {
+    public func request(_ request: URLRequestConvertible, callback: @escaping (Result<Any>) -> ()) {
         Alamofire.request(request).responseJSON { (response) in
             callback(response.result)
         }
     }
 }
+

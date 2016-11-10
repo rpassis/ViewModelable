@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-protocol Router: URLRequestConvertible {
+public protocol Router: URLRequestConvertible {
     static var baseUrlString: String { get }
     var method: HTTPMethod { get }
     var path: String { get }

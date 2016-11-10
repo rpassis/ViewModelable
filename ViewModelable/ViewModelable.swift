@@ -8,16 +8,16 @@
 
 import Foundation
 
-protocol ViewModelable {
-    init(store: Storage)
-    var store: Storage { get }
+public protocol ViewModelable {
+    init(store: Storage?)
+    var store: Storage? { get }
     var subscribers: [Subscriber] { get set }
     func subscribe(subscriber: Subscriber)
     func unsubscribe(subscriber: Subscriber)
     func notifySubscribers()
 }
 
-extension ViewModelable {
+public extension ViewModelable {
     mutating func subscribe(subscriber: Subscriber) {
         subscribers.append(subscriber)
     }
@@ -27,6 +27,6 @@ extension ViewModelable {
     }
     
     func notifySubscribers() {
-        subscribers.forEach({ $0.update() })
+        subscribers.forEach({ $0.update(viewModel: self) })
     }
 }
